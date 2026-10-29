@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería El Saber 📚</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="barra-superior">
+        ✨ ¡Las grandes historias comienzan con un libro! ✨
+    </div>
+
+    <header class="navbar">
+        <a href="#inicio" class="marca">
+            📚 El Saber
+            <small>LIBRERÍA ESCOLAR</small>
+        </a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#mi-lista">Mi lista 🛒</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-contenido">
+            <span class="etiqueta">🎒 TODO PARA TU AVENTURA ESCOLAR</span>
+            <h1>¡Abre un libro,<br><span>abre tu mundo!</span></h1>
+            <p>
+                Descubre libros, cuadernos, colores y tecnología
+                para aprender, crear y soñar.
+            </p>
+            <a href="#catalogo" class="boton-hero">Explorar catálogo ➜</a>
+        </div>
+
+        <div class="hero-imagen">
+            <img src="portada.jpeg"
+                 alt="Libros y útiles escolares"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="emoji-portada" style="display:none">📚✏️🎨</span>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <div>📚 <strong>Libros para todos</strong></div>
+        <div>✏️ <strong>Útiles escolares</strong></div>
+        <div>💚 <strong>Pedidos por WhatsApp</strong></div>
+    </section>
+
+    <section class="seccion" id="catalogo">
+        <div class="encabezado">
+            <span class="etiqueta">NUESTRO CATÁLOGO</span>
+            <h2>Encuentra tus <span>favoritos</span></h2>
+            <p>Busca tus productos y agrégalos a tu lista.</p>
+        </div>
+
+        <div class="controles">
+            <input type="search" id="buscador"
+                   placeholder="🔎 Buscar producto...">
+
+            <select id="filtroCategoria">
+                <option value="todos">Todas las categorías</option>
+                <option value="cuadernos">Cuadernos</option>
+                <option value="libros">Libros</option>
+                <option value="papeleria">Papelería</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+        </div>
+
+        <div id="productos" class="grid-productos"></div>
+    </section>
+
+    <section class="seccion zona-lista" id="mi-lista">
+        <div class="encabezado">
+            <span class="etiqueta">TU CARRITO ESCOLAR</span>
+            <h2>Mi lista de <span>compras 🛒</span></h2>
+            <p>Revisa tus productos y envía tu pedido.</p>
+        </div>
+
+        <div class="panel-lista">
+            <h3>🧺 Productos seleccionados</h3>
+
+            <div id="cantidadLista" class="cantidad">0 artículos</div>
+
+            <div id="listaCompras">
+                <p class="vacio">¡Agrega tus productos favoritos! 💜</p>
+            </div>
+
+            <div class="resumen">
+                <span>Total estimado</span>
+                <strong id="total">$0</strong>
+            </div>
+
+            <button id="enviarWhatsApp" class="boton-whatsapp">
+                💬 Enviar mi lista por WhatsApp ➜
+            </button>
+
+            <button id="vaciarLista" class="boton-vaciar">
+                🗑️ Vaciar lista
+            </button>
+        </div>
+    </section>
+
+    <section class="frase-final">
+        <div>🌟 📖 ✏️</div>
+        <h2>Leer es soñar con los ojos abiertos.</h2>
+        <p>En El Saber, cada página es una nueva aventura.</p>
+    </section>
+
+    <footer>
+        <h2>📚 Librería El Saber</h2>
+        <p>Aprender, crear y soñar.</p>
+        <small>© 2026 Librería El Saber</small>
+    </footer>
+
+</body>
+</html>
